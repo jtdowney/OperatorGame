@@ -1,0 +1,1 @@
+A game quickly built using WinForms and managed DirectX/DirectInput to help train my [robotics teams](http://www.precisionguessworks.org/) student operator. The game is essentially a set of flash cards that are answered using the same [Logitech Dual Action gamepad](http://www.logitech.com/en-us/gaming/controllers/devices/288) we use for the real robot.
