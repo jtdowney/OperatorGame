@@ -71,14 +71,14 @@ namespace OperatorGame
             string operation = this.operationLabel.Text;
             if (this.operations[operation].Invoke(this.gamepad))
             {
-                this.AnimateCorrectAnswer();
+                this.CorrectAnswer();
             }
             else if (operation.EndsWith("(circle)") && this.gamepad.GetNumberedButton(4))
             {
             }
             else
             {
-                this.AnimateIncorrectAnswer();
+                this.IncorrectAnswer();
             }
         }
 
@@ -100,7 +100,7 @@ namespace OperatorGame
             this.roundStopwatch = Stopwatch.StartNew();
         }
 
-        private void AnimateCorrectAnswer()
+        private void CorrectAnswer()
         {
             var shakeTimer = new Timer();
             shakeTimer.Interval = 100;
@@ -124,7 +124,7 @@ namespace OperatorGame
             shakeTimer.Start();
         }
 
-        private void AnimateIncorrectAnswer()
+        private void IncorrectAnswer()
         {
             var shakeTimer = new Timer();
             shakeTimer.Interval = 100;
